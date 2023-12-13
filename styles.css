@@ -9,13 +9,14 @@
   --darkgray: #222222;
   --text-color-lightgray: #999999;
   --darkgray-opacity: #222222cc;
+  --gray-opacity: #22222299;
   --white: #ffffff;
   --black: #000000;
   --black-opacity: #000000cc;
   --lightgray: #ebebeb;
   --bg-color-darkgray: #343332;
   --card-big-color: #ffffff99;
-}
+} 
 
 body {
   font-family: "Fira Sans", sans-serif;
@@ -45,13 +46,13 @@ body {
   gap: 50px;
 }
 
-.navbar__listitem {
+.navbar__list-item {
   text-transform: uppercase;
   font-weight: 500;
   color: var(--text-color-lightgray);
 }
 
-.navbar__listitem--selected {
+.navbar__list-item--selected {
   color: var(--darkgray);
 }
 
@@ -64,7 +65,7 @@ body {
   padding: 11px 33px;
 }
 
-.navbar__hamburgermenu {
+.navbar__hamburger-menu {
   display: none;
 }
 
@@ -245,6 +246,12 @@ body {
   color: var(--darkgray-opacity);
 }
 
+.footer__text {
+  color: var(--gray-opacity);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
 .footer__form {
   display: flex;
   flex-direction: column;
@@ -326,7 +333,7 @@ body {
   }
 
   /* HAMBURGER MENU + ANIMATION */
-  .navbar__hamburgermenu {
+  .navbar__hamburger-menu {
     display: block;
     position: relative;
     z-index: 1;
@@ -334,7 +341,7 @@ body {
     user-select: none;
   }
 
-  .navbar__hamburgermenu-checkbox {
+  .navbar__hamburger-menu-checkbox {
     display: block;
     width: 40px;
     height: 32px;
@@ -346,7 +353,7 @@ body {
     -webkit-touch-callout: none;
   }
 
-  .navbar__hamburgermenu-line {
+  .navbar__hamburger-menu-line {
     display: block;
     width: 33px;
     height: 4px;
@@ -360,30 +367,30 @@ body {
       background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   }
 
-  .navbar__hamburgermenu-line--first {
+  .navbar__hamburger-menu-line--first {
     transform-origin: 0% 0%;
   }
 
-  .navbar__hamburgermenu-line--second {
+  .navbar__hamburger-menu-line--second {
     transform-origin: 0% 100%;
   }
 
-  .navbar__hamburgermenu-checkbox:checked ~ span {
+  .navbar__hamburger-menu-checkbox:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-1px, -4px);
     background: var(--darkgray);
   }
 
-  .navbar__hamburgermenu-checkbox:checked ~ span:nth-last-child(3) {
+  .navbar__hamburger-menu-checkbox:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
 
-  .navbar__hamburgermenu-checkbox:checked ~ span:nth-last-child(2) {
+  .navbar__hamburger-menu-checkbox:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
   }
 
-  .navbar__hamburgermenu-list {
+  .navbar__hamburger-menu-list {
     display: none;
     position: absolute;
     z-index: 1;
@@ -399,7 +406,7 @@ body {
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 
-  .navbar__hamburgermenu-listitem {
+  .navbar__hamburger-menu-list-item {
     padding: 10px 0;
     font-size: 1rem;
     display: flex;
@@ -409,14 +416,14 @@ body {
     transition: color 0.3s ease;
   }
 
-  .navbar__hamburgermenu-listitem a:link,
-  .navbar__hamburgermenu-listitem a:visited {
+  .navbar__hamburger-menu-list-item a:link,
+  .navbar__hamburger-menu-list-item a:visited {
     background-color: var(--bg-color-darkgray);
     color: var(--card-big-color);
     text-decoration: none;
   }
 
-  .navbar__hamburgermenu-checkbox:checked ~ .navbar__hamburgermenu-list {
+  .navbar__hamburger-menu-checkbox:checked ~ .navbar__hamburger-menu-list {
     display: block;
     transform: none;
   }
@@ -459,6 +466,10 @@ body {
     font-size: 1rem;
   }
 
+  .main {
+
+  }
+  
   .footer {
     justify-content: center;
   }
