@@ -27,22 +27,20 @@
         <li class="navbar__listitem">Pricing</li>
         <li class="navbar__listitem">Contact</li>
       </ul>
-      <ul class="navbar__button-container">
-        <button class="navbar__button">Get a quote</button>
-      </ul>
+      <button class="navbar__button">Get a quote</button>       
 
       <div class="navbar__hamburgermenu">
-        <input type="checkbox" class="hamburgermenu__checkbox"/>
-        <span class="hamburger__line hamburger__line--first"></span>
-        <span class="hamburger__line hamburger__line--second"></span>
-        <span class="hamburger__line hamburger__line--third"></span>        
-        <ul class="hamburgermenu__list">
-          <li class="hamburgermenu__listitem"><a href="#">Home</a></li>
-          <li class="hamburgermenu__listitem"><a href="#">How It Works</a></li>
-          <li class="hamburgermenu__listitem"><a href="#">Features</a></li>
-          <li class="hamburgermenu__listitem"><a href="#">Press</a></li>
-          <li class="hamburgermenu__listitem"><a href="#">Pricing</a></li>
-          <li class="hamburgermenu__listitem"><a href="#">Contact</a></li>
+        <input type="checkbox" class="navbar__hamburgermenu-checkbox"/>
+        <span class="navbar__hamburgermenu-line navbar__hamburgermenu-line--first"></span>
+        <span class="navbar__hamburgermenu-line navbar__hamburgermenu-line--second"></span>
+        <span class="navbar__hamburgermenu-line navbar__hamburger-line--third"></span>        
+        <ul class="navbar__hamburgermenu-list">
+          <li class="navbar__hamburgermenu-listitem"><a href="#">Home</a></li>
+          <li class="navbar__hamburgermenu-listitem"><a href="#">How It Works</a></li>
+          <li class="navbar__hamburgermenu-listitem"><a href="#">Features</a></li>
+          <li class="navbar__hamburgermenu-listitem"><a href="#">Press</a></li>
+          <li class="navbar__hamburgermenu-listitem"><a href="#">Pricing</a></li>
+          <li class="navbar__hamburgermenu-listitem"><a href="#">Contact</a></li>
         </ul>
       </div>
   </nav>
@@ -55,10 +53,10 @@
       </p>
       <section class="header__button-container">
         <button class="header__button">
-          <img src="path4.png" class="button__logo" />App Store
+          <img src="path4.png" class="header__button-logo"/>App Store
         </button>
         <button class="header__button">
-          <img src="Group.png" class="button__logo" />Google Play
+          <img src="Group.png" class="header__button-logo"/>Google Play
         </button>
       </section>
       <img src="phone.png" class="header__img" />
@@ -66,48 +64,52 @@
 
     <main class="main">
       <h2 class="main__header">Our products</h2>
-      <article class="main__card-small">
-        <img src="image-outline.png" class="card__img" />
-        <h3 class="card__header">Green Cap</h3>
-        <p class="card__price">US$29</p>
+      <article class="main__small-card">
+        <img src="image-outline.png" class="main__card-img" />
+        <h3 class="main__card-header">Green Cap</h3>
+        <p class="main__card-price">US$29</p>
       </article>
-      <article class="main__card-small">
-        <img src="image-outline.png" class="card__img" />
-        <h3 class="card__header">Zara skirt</h3>
-        <p class="card__price">US$19.90</p>
+      <article class="main__small-card">
+        <img src="image-outline.png" class="main__card-img" />
+        <h3 class="main__card-header">Zara skirt</h3>
+        <p class="main__card-price">US$19.90</p>
       </article>
-      <article class="main__card-small">
-        <img src="image-outline.png" class="card__img" />
-        <h3 class="card__header">Nike Air</h3>
-        <p class="card__price">US$34</p>
+      <article class="main__small-card">
+        <img src="image-outline.png" class="main__card-img" />
+        <h3 class="main__card-header">Nike Air</h3>
+        <p class="main__card-price">US$34</p>
       </article>
-      <article class="main__card-small">
-        <img src="image-outline.png" class="card__img" />
-        <h3 class="card__header">Nerd tshirt</h3>
-        <p class="card__price">US$9.99</p>
+      <article class="main__small-card">
+        <img src="image-outline.png" class="main__card-img" />
+        <h3 class="main__card-header">Nerd tshirt</h3>
+        <p class="main__card-price">US$9.99</p>
       </article>
 
-      <article class="main__card-big">
-        <h3 class="card-big__header">Collection</h3>
-        <p class="card-big__text">Summer 2021</p>
-        <button class="card__button">Check it out</button>
+      <article class="main__big-card">
+        <h3 class="main__big-card-header">Collection</h3>
+        <p class="main__card-text">Summer 2021</p>
+        <button class="main__card-button">Check it out</button>
       </article>
-      <article class="main__card-big">
-        <h3 class="card-big__header">Collection</h3>
-        <p class="card-big__text">Summer 2021</p>
-        <button class="card__button">Check it out</button>
+      <article class="main__big-card">
+        <h3 class="main__big-card-header">Collection</h3>
+        <p class="main__card-text">Summer 2021</p>
+        <button class="main__card-button">Check it out</button>
       </article>
     </main>
 
     <footer class="footer">
-      <form class="form__container">
+      <section class="footer__container">
         <h2 class="footer__header">Contact us</h2>
         <h3 class="footer__subheader">We'd love to hear from you</h3>
-        <p class="footer__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          vel eleifend diam, tempus accumsan neque.
-        </p>
+        <form class="footer__form">
+        <input type="text" id="name" name="name" class="footer__input" placeholder="Name">
+        <input type="email" id="email" name="email" class="footer__input" placeholder="Email">
+        <input type="text" id="address" name="address" class="footer__input" placeholder="Address">
+        <input type="number" id="phonenumber" name="phonenumber" class="footer__input" placeholder="Phone number">
+        <textarea name="message" rows="5" cols="30" class="footer__textarea" placeholder="What would you like to tell us?"></textarea>
+        <input type="submit" value="Let us know!" class="footer__submit">
       </form>
+    </section>
     </footer>
   </body>
 </html>
