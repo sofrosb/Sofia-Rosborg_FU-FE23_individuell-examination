@@ -24,7 +24,7 @@ body {
   margin-inline: auto;
 }
 
-/* NAVBAR WITH NESTING */
+/* NAVBAR WITH MEDIA QUERY */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -170,7 +170,7 @@ body {
   }
 }
 
-/* HEADER WITH NESTING */
+/* HEADER WITH MEDIA QUERIES */
 .header {
   height: 700px;
   padding: 0 15px;
@@ -239,7 +239,7 @@ body {
     font-size: 1rem;
   }
 }
-/* MEDIA QUERY MOBILE */
+
 @media screen and (max-width: 375px) {
   .header {
     font-size: 1rem;
@@ -284,7 +284,7 @@ body {
   }
 }
 
-/* MAIN WITH NESTING AND MEDIA QUERY */
+/* MAIN WITH MEDIA QUERY */
 .main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -384,7 +384,7 @@ body {
   }
 }
 
-/* FOOTER WITH NESTING AND MEDIA QUERIES */
+/* FOOTER WITH MEDIA QUERIES */
 .footer {
   background-image: url(assets/footer_map_bg.png);
   height: 556px;
